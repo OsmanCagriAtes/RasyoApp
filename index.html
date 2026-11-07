@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RasyoApp — Güvenli Anahtarlama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bgCanvas"></canvas>
+
+<header>
+  <div class="wrap navbar">
+    <div class="brand"><img src="logo.png" alt="RasyoApp logosu">RasyoApp</div>
+    <nav class="links">
+      <a href="#ozellikler">Özellikler</a>
+      <a href="#nasil-calisir">Nasıl Çalışır</a>
+      <a href="#gereksinimler">Gereksinimler</a>
+    </nav>
+    <a href="#indir" class="btn">İndir</a>
+  </div>
+</header>
+
+<div id="home-view">
+
+<section class="hero">
+  <div class="blueprint"></div>
+  <canvas id="matrixHero"></canvas>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Windows için masaüstü güvenlik uygulaması</div>
+      <h1>Anahtarlamada yeni çağın yol göstericisi.</h1>
+      <p>RasyoApp, kriptografik anahtar üretimi ve anahtarlama süreçlerini tek bir masaüstü uygulamasında toplayan, Windows için geliştirilmiş bir siber güvenlik aracıdır.</p>
+      <div class="hero-cta">
+        <a href="#indir" class="btn">Uygulamayı İndir</a>
+        <a href="#nasil-calisir" class="btn ghost">Nasıl çalışır</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-stage">
+        <canvas id="heroCanvas"></canvas>
+      </div>
+      <div class="hero-caption">Anahtarlama sürecinin soyut gösterimi</div>
+    </div>
+  </div>
+</section>
+
+<section id="ozellikler">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="tag">Özellikler</div>
+      <h2>Tek uygulama, eksiksiz anahtar yönetimi</h2>
+    </div>
+    <div class="features">
+      <div class="feature reveal">
+        <canvas class="feature-icon" id="feat1Canvas"></canvas>
+        <div class="mark">01</div>
+        <h3>Güvenli anahtarlama teknolojisi</h3>
+        <p>Güçlü algoritmalarla anahtarlama yapar.</p>
+      </div>
+      <div class="feature reveal">
+        <canvas class="feature-icon" id="feat2Canvas"></canvas>
+        <div class="mark">02</div>
+        <h3>Anahtarlama süreci</h3>
+        <p>Anahtarlama işlemi gerçekleştirilir, sizlere sunulur ve korsanların erişmesi en zor hâle getirilir.</p>
+      </div>
+      <div class="feature reveal">
+        <canvas class="feature-icon" id="feat3Canvas"></canvas>
+        <div class="mark">03</div>
+        <h3>Yerel çalışma</h3>
+        <p>Veriler cihazınızda kalır; işlemler internet bağlantısı gerektirmeden masaüstünde yürütülür.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nasil-calisir">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="tag">Süreç</div>
+      <h2>Nasıl çalışır</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="num">01</div><div><h3>Kurulum</h3><p>RasyoApp'ı indirip Windows bilgisayarınıza kurun; ek bir bağımlılık gerekmez.</p></div></div>
+      <div class="step reveal"><div class="num">02</div><div><h3>Anahtar oluşturma</h3><p>Uygulama içinden yeni bir anahtarlama yapın ve güvenlik parametrelerini belirleyin.</p></div></div>
+      <div class="step reveal"><div class="num">03</div><div><h3>Anahtarlama ve yönetim</h3><p>Oluşturulan anahtarları projelerinizde kullanın, gerektiğinde yenileyin veya iptal edin.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="gereksinimler">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="tag">Sistem Gereksinimleri</div>
+      <h2>Kurulumdan önce kontrol edin</h2>
+    </div>
+    <div class="reqs">
+      <ul>
+        <li><span>İşletim sistemi</span><span>Windows 10 / 11 (64-bit)</span></li>
+        <li><span>RAM</span><span>En az 4 GB</span></li>
+        <li><span>Disk alanı</span><span>100 MB boş alan</span></li>
+      </ul>
+      <ul>
+        <li><span>.NET çalışma zamanı</span><span>Otomatik kontrol edilir</span></li>
+        <li><span>İnternet</span><span>Yalnızca güncellemeler için</span></li>
+        <li><span>Yönetici izni</span><span>Kurulum için gerekli</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="indir">
+  <div class="wrap">
+    <div class="download-panel reveal">
+      <div>
+        <h2>RasyoApp'ı indirin</h2>
+        <p>Uygulamayı Windows bilgisayarınıza kurup anahtarlama sürecinizi hemen başlatın.</p>
+        <a href="#" class="btn" id="downloadBtn" download="RasyoApp.exe">RasyoApp'ı İndir (.exe)</a>
+        <div class="download-note">İndirme, dosyayı doğrudan tarayıcınız üzerinden RasyoApp.exe olarak kaydeder.</div>
+      </div>
+      <canvas class="download-icon" id="downloadCanvas"></canvas>
+    </div>
+  </div>
+</section>
+
+</div><!-- /home-view -->
+
+<!-- AYDINLATMA METNİ / KVKK -->
+<div class="legal" id="view-aydinlatma-metni">
+  <div class="wrap">
+    <a href="#ana" class="back">← Ana sayfaya dön</a>
+    <h1>Aydınlatma Metni</h1>
+    <div class="updated">6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında</div>
+
+    <p>İşbu Aydınlatma Metni, RasyoApp uygulamasının geliştiricisi/sahibi <strong>[Geliştirici / Şirket Adı]</strong> ("Veri Sorumlusu") tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("KVKK") 10. maddesi uyarınca, kişisel verilerin işlenmesine ilişkin olarak kullanıcıların bilgilendirilmesi amacıyla hazırlanmıştır.</p>
+
+    <h2>1. Veri Sorumlusu</h2>
+    <p>Kişisel verileriniz, veri sorumlusu sıfatıyla <strong>[Geliştirici / Şirket Adı]</strong> tarafından, aşağıda açıklanan kapsamda işlenebilecektir. İletişim: <strong>[E-posta adresi]</strong>, <strong>[Adres, varsa]</strong>.</p>
+
+    <h2>2. İşlenen Kişisel Veriler</h2>
+    <p>RasyoApp'ın kullanımı sırasında aşağıdaki kategorilerde kişisel veriler işlenebilir:</p>
+    <ul>
+      <li>Kimlik ve iletişim bilgileri (web sitesi üzerinden iletişime geçilmesi hâlinde ad, e-posta)</li>
+      <li>İşlem güvenliği bilgileri (uygulama içi oturum ve hata kayıtları)</li>
+      <li>Cihaz ve kullanım bilgileri (işletim sistemi sürümü, uygulama sürümü)</li>
+    </ul>
+    <p>RasyoApp tarafından üretilen kriptografik anahtarlar, varsayılan olarak yalnızca kullanıcının kendi cihazında yerel olarak saklanır.</p>
+
+    <h2>3. İşleme Amaçları</h2>
+    <ul>
+      <li>Uygulamanın çalışmasının ve güvenliğinin sağlanması</li>
+      <li>Teknik destek ve hata giderme süreçlerinin yürütülmesi</li>
+      <li>Yasal yükümlülüklerin yerine getirilmesi</li>
+      <li>Uygulama güncellemelerinin ve duyuruların iletilmesi (açık rıza alınması hâlinde)</li>
+    </ul>
+
+    <h2>4. Hukuki Sebep</h2>
+    <p>Kişisel verileriniz, KVKK'nın 5. ve 6. maddelerinde belirtilen "ilgili kişinin açık rızası", "bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması", "veri sorumlusunun hukuki yükümlülüğünü yerine getirmesi" ve "veri sorumlusunun meşru menfaati" hukuki sebeplerine dayanılarak işlenmektedir.</p>
+
+    <h2>5. Verilerin Aktarılması</h2>
+    <p>Kişisel verileriniz, yasal yükümlülükler saklı kalmak kaydıyla, açık rızanız olmadan yurt içi veya yurt dışındaki üçüncü kişilerle paylaşılmaz. Teknik altyapı hizmeti alınan tedarikçilerle sınırlı ve amaçla bağlantılı paylaşım yapılabilir.</p>
+
+    <h2>6. Saklama Süresi</h2>
+    <p>Kişisel veriler, ilgili mevzuatta öngörülen süreler ve işleme amacının gerektirdiği süre boyunca saklanır; bu sürenin sonunda silinir, yok edilir veya anonim hâle getirilir.</p>
+
+    <h2>7. KVKK Madde 11 Kapsamındaki Haklarınız</h2>
+    <p>KVKK'nın 11. maddesi uyarınca; kişisel verinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini isteme, KVKK'nın 7. maddesinde öngörülen şartlar çerçevesinde silinmesini/yok edilmesini isteme, yapılan işlemlerin ilgili üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz edilmesi nedeniyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme haklarına sahipsiniz.</p>
+    <p>Bu haklarınızı kullanmak için <strong>[E-posta adresi]</strong> üzerinden yazılı olarak başvurabilirsiniz.</p>
+
+    <h2>8. Değişiklikler</h2>
+    <p>Bu Aydınlatma Metni, yasal düzenlemeler veya uygulamadaki değişiklikler doğrultusunda güncellenebilir. Güncel metin bu sayfada yayımlanır.</p>
+  </div>
+</div>
+
+<!-- ÇEREZ POLİTİKASI -->
+<div class="legal" id="view-cerez-politikasi">
+  <div class="wrap">
+    <a href="#ana" class="back">← Ana sayfaya dön</a>
+    <h1>Çerez Politikası</h1>
+    <div class="updated">RasyoApp web sitesi için geçerlidir</div>
+
+    <p>Bu web sitesi, ziyaretçi deneyimini iyileştirmek amacıyla çerezler (cookies) kullanmaktadır. Bu metin, kullanılan çerez türlerini ve bunları nasıl yönetebileceğinizi açıklar.</p>
+
+    <h2>1. Çerez Nedir?</h2>
+    <p>Çerezler, bir web sitesini ziyaret ettiğinizde tarayıcınız aracılığıyla cihazınıza kaydedilen küçük metin dosyalarıdır. Tercihlerinizin hatırlanmasını ve sitenin düzgün çalışmasını sağlar.</p>
+
+    <h2>2. Kullanılan Çerez Türleri</h2>
+    <ul>
+      <li><strong>Zorunlu çerezler:</strong> Sitenin temel işlevlerinin (gezinme, güvenlik) çalışması için gereklidir; devre dışı bırakılamaz.</li>
+      <li><strong>Tercih çerezleri:</strong> Dil ve görünüm gibi tercihlerinizi hatırlamak için kullanılır.</li>
+      <li><strong>Analitik çerezler:</strong> Site kullanımının anlaşılması ve iyileştirilmesi amacıyla, kullanıcı onayına bağlı olarak kullanılabilir.</li>
+    </ul>
+
+    <h2>3. Çerez Onayı</h2>
+    <p>Siteye ilk girişinizde ekranın altında yer alan bildirim aracılığıyla çerez kullanımına onay verebilir veya zorunlu olmayan çerezleri reddedebilirsiniz. Tercihiniz tarayıcınızda saklanır ve dilediğiniz zaman tarayıcı ayarlarınızdan çerezleri silerek değiştirebilirsiniz.</p>
+
+    <h2>4. Çerezlerin Yönetimi</h2>
+    <p>Çoğu tarayıcı, çerezleri varsayılan olarak kabul edecek şekilde ayarlanmıştır. Tarayıcı ayarlarınız üzerinden çerezleri engelleyebilir veya mevcut çerezleri silebilirsiniz; ancak bu durumda sitenin bazı bölümleri beklendiği gibi çalışmayabilir.</p>
+
+    <h2>5. İletişim</h2>
+    <p>Çerez politikasıyla ilgili sorularınız için <strong>[E-posta adresi]</strong> üzerinden bizimle iletişime geçebilirsiniz.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-row">
+    <div>© 2026 RasyoApp. Tüm hakları saklıdır. · Developed by Babel</div>
+    <div class="foot-links">
+      <a href="#aydinlatma-metni">Aydınlatma Metni</a>
+      <a href="#cerez-politikasi">Çerez Politikası</a>
+      <a href="#ana">Ana Sayfa</a>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-bar" id="cookieBar">
+  <p>Bu site, deneyiminizi iyileştirmek için çerezler kullanır. Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+  <div class="actions">
+    <a href="#cerez-politikasi" class="btn ghost">Detaylar</a>
+    <button class="btn" id="cookieAccept">Kabul Et</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
